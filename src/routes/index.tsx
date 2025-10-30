@@ -7,18 +7,19 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 enum ROUTERS {
 
   HomeScreens = 'HomeScreens',
-  SecondsScreens = 'SecondsScreens',
+  DetailsScreens = 'DetailsScreens',
 }
 
 export type RouteParams = {
   title?: string;
+  id?: number;
 };
 
 
 export type RootStackNavigationTypes = {
 
   [ROUTERS.HomeScreens]: RouteParams | undefined;
-  [ROUTERS.SecondsScreens]: RouteParams | undefined;
+  [ROUTERS.DetailsScreens]: RouteParams | undefined;
 
 };
 

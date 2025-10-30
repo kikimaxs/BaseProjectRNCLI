@@ -67,3 +67,8 @@ export type ProductListParams = {
   limit?: number;
   category?: string;
 };
+
+// Parameter minimal untuk mengambil detail produk berdasarkan id
+export type ProductIdParams = {
+  id: number;
+};

@@ -2,6 +2,7 @@ import {
   ProductRoot,
   Product,
   ProductListParams,
+  ProductIdParams,
 } from '@/src/modules/home/types';
 import { getData, postData } from '@/src/utils/httpsclient';
 
@@ -10,7 +11,7 @@ export function ProductList(params: ProductListParams) {
     return response;
   });
 }
-export function ProductId(params: Product) {
+export function ProductId(params: ProductIdParams) {
   return getData<Product>(`/products/${params.id}`, params).then(response => {
     return response;
   });

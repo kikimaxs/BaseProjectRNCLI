@@ -3,7 +3,7 @@ import { Platform, UIManager } from 'react-native';
 import { Navigator, ROUTERS, Screen } from '../routes';
 
 import HomeScreens from '@/src/modules/home/screens';
-import SecondsScreens from '@/src/modules/second/screens';
+import DetailsScreens from '@/src/modules/details/screens';
 
 
 
@@ -26,7 +26,7 @@ function RootNavigator() {
     >
       {/* start region screen App */}
          <Screen name={ROUTERS.HomeScreens} component={HomeScreens} />
-         <Screen name={ROUTERS.SecondsScreens} component={SecondsScreens} />
+         <Screen name={ROUTERS.DetailsScreens} component={DetailsScreens} />
       {/* end region screen App */}
     </Navigator>
   );
