@@ -8,13 +8,14 @@
 import { StatusBar, StyleSheet, useColorScheme, View, Text } from 'react-native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { Provider } from 'react-redux';
-import Navigation from '@/src/navigations';
+import Navigation from '@/src/navigations/index';
 import RootNavigator from '@/src/navigations/rootNavigator';
 import { store } from '@/src/configs/store';
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { appActions } from '@/src/store/reducers/app';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import "./global.css";
 
 function App() {
   const queryClient = new QueryClient();
